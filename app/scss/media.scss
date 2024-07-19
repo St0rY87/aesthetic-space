@@ -1,11 +1,80 @@
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
     .header {
         &__btn {
             margin-right: auto;
         }
     }
+    .top {
+        &__promo {
+            padding-top: 107px;
+            padding-bottom: 20px;
+            gap: 8px;
+        }
+        &__promo-title {
+            font-size: 18px;
+        }
+        &__promo-img {
+            max-width: 75%;
+        }
+        &__about {
+            padding-top: 40px;
+        }
+        &__inner {
+            grid-template-rows: 200px 390px;
+            gap: 23px;
+        }
+        &__title {
+            font-size: 54px;
+            line-height: 1;
+        }
+        &__image {
+            max-width: 80%;
+        }
+        &__slogan {
+            padding-bottom: 20px;
+        }
+    }
 }
-@media (max-width: 920px) {
+
+@media (max-width: 1020px) {
+    .top {
+        &__inner {
+            grid-template-rows: 200px 350px;
+            grid-template-columns: 2fr 3fr;
+        }
+        &__about {
+            // padding-top: 50px;
+            grid-template-columns: 2.1fr 3fr;
+        }
+        &__info {
+            padding-top: 5px;
+        }
+        &__slogan {
+            padding-bottom: 20px;
+            padding-left: 0;
+        }
+
+        &__title {
+            // font-size: 34px;
+        }
+        &__image {
+            max-width: 84%;
+        }
+        &__promo {
+            padding-top: 100px;
+            padding-bottom: 20px;
+            gap: 5px;
+        }
+        &__promo-title {
+            font-size: 18px;
+        }
+        
+        &__promo-btn {
+            padding-block: 15px;
+            padding-inline: 30px;
+            font-size: 16px;
+        }
+    }
     .header {
         &__inner {
             justify-content: flex-end;
@@ -23,7 +92,6 @@
             margin-top: 20px;
         }
     }
-
     .footer {
         &__btn {
             margin-left: auto;
@@ -33,7 +101,9 @@
 }
 
 
-@media (max-width: 560px) {
+
+
+@media (max-width: 770px) {
     .logo {
         img {
             width: 250px;
@@ -47,7 +117,7 @@
 
     .footer {
         &__inner {
-            padding-inline: clamp(0.625rem, -4.3159rem + 21.0811vw, 3.0625rem);
+            padding-inline: 10px;
         }
         &__contacts {
             gap: 30px;
@@ -63,5 +133,41 @@
     .btn {
         padding-inline: 50px;
         font-size: 18px;
+    }
+    .top {
+        &__inner {
+            display: block;
+        }
+        &__about {
+            padding-top: 0;
+            background-image: none;
+            background-color: #8F7E70;
+            padding: 20px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        &__title {
+            line-height: 1.2;
+            font-size: 48px;
+        }
+        &__image {
+            max-width: 100%;
+        }
+        &__promo {
+            padding: 20px;
+            background-image: none;
+            background-color: #3C342E;
+            border-radius: 30px;
+            gap: 15px;
+        }
+        &__promo-title {
+            font-size:20px;
+        }
+        &__promo-img {
+            max-width: 100%;
+        }
+        &__promo-btn {
+            padding-block: 18px;
+        }
     }
 }
